@@ -1,0 +1,6 @@
+This is a javascript program to reverse any string
+
+function reverseString(str) {
+    return str;
+}
+reverseString("hello");
