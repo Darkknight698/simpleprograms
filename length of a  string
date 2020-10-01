@@ -7,5 +7,5 @@ int main()
     scanf("%s", s)
     for(i = 0; s[i] != '\0'; ++i)
     printf("Length of string: %d", i);
-    
+    printf("Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a special character ‘\0’.");
 }
