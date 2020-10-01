@@ -1,9 +1,13 @@
 #include <stdio.h>
 int main()
 {
+    //string s
     char s[1000];
+    //integer i
     int i;
+    //Printing Enter a string
     printf("Enter a string: ");
+    //taking string input
     scanf("%s", s)
     for(i = 0; s[i] != '\0'; ++i)
     printf("Length of string: %d", i);
