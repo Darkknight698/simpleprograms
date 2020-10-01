@@ -1,0 +1,66 @@
+*General Algorithm*
+Step 1: For i = 0 to N-1 repeat Step 2
+Step 2: For J = i + 1 to N – I repeat
+              Step 3: if A[J] > A[i]
+Swap A[J] and A[i]
+[End of Inner for loop]
+[End if Outer for loop]
+Step 4: Exit
+----------------------------------------------------------------------------
+*Pseudocode*
+Procedure bubble_sort (array , N)
+               array – list of items to be sorted
+               N – size of array
+begin
+               swapped = false
+               repeat
+                             for I = 1 to N-1 
+                                              if array[i-1] > array[i] then
+                                                           swap array[i-1] and array[i]
+                                                           swapped = true
+                                              end if
+                              end for
+                until not swapped
+end procedure
+---------------------------------------------------------------------------------
+*C++ Program*
+#include<iostream>
+using namespace std;
+int main ()
+{
+   int i, j,temp,pass=0;
+   int a[10] = {10,2,0,14,43,25,18,1,5,45};
+   cout <<"Input list ...\n";
+   for(i = 0; i<10; i++) {
+      cout <<a[i]<<"\t";
+   }
+cout<<endl;
+for(i = 0; i<10; i++) {
+   for(j = i+1; j<10; j++)
+   {
+      if(a[j] < a[i]) {
+         temp = a[i];
+         a[i] = a[j];
+         a[j] = temp;
+      }
+   }
+pass++;
+}
+cout <<"Sorted Element List ...\n";
+for(i = 0; i<10; i++) {
+   cout <<a[i]<<"\t";
+}
+cout<<"\nNumber of passes taken to sort the list:"<<pass<<endl;
+return 0;
+}
+Output:
+
+Input list …
+
+10      2       0       14      43      25      18      1       5       45
+
+Sorted Element List …
+
+0       1       2       5       10      14      18      25      43      45
+
+Number of passes taken to sort the list:10
