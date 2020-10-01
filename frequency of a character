@@ -13,5 +13,6 @@ int main()
            ++frequency;
    }
    printf("Frequency of %c = %d", ch, frequency);
+   printf("Frequency of characters in a string is the number of times they occur in a string");
    return 0;
 }
