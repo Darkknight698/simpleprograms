@@ -4,11 +4,15 @@ int main()
    char str[1000], ch;
    int i, frequency = 0;
    print("Enter a string: ");
+   //Main string
    gets(str);
    printf("Enter a character to find the frequency: ");
+   //Character whose frequency we want to get
    scanf("%c",&ch);
    for(i = 0; str[i] != '\0'; ++i)
    {
+       //Whenever we are getting the character ch in the string
+       //we are incrementing the frequency
        if(ch == str[i])
            ++frequency;
    }
