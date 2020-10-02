@@ -6,13 +6,13 @@ int main()
     FILE *fptr;
     if ((fptr = fopen("program.txt", "r")) == NULL)
     {
-        print("Error! opening file");
-        exit(1);      
+        printf("Error! opening file");
+        exit(0);      
     }
    
-    scanf(fptr,"%[^\n]", c);
+    fscanf(fptr,"%s", c);
     printf("Data from the file:\n%s", c);
-    close(fptr)
+    fclose(fptr);
     
     return 0;
 }
