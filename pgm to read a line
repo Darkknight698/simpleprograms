@@ -7,7 +7,7 @@ int main()
     if ((fptr = fopen("program.txt", "r")) == NULL)
     {
         print("Error! opening file");
-        exit(1);      
+        exit(0);      
     }
    
     scanf(fptr,"%[^\n]", c);
