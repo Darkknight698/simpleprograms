@@ -12,7 +12,7 @@ int main()
    
     scanf(fptr,"%[^\n]", c);
     printf("Data from the file:\n%s", c);
-    close(fptr)
+    close(fptr);
     
     return 0;
 }
