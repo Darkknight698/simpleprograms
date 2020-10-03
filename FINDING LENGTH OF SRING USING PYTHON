@@ -1,0 +1,6 @@
+#To store the input into a variable 
+a = input()
+#finding the length of the string 
+b = len(a)
+#printing length of the string 
+print(b)
